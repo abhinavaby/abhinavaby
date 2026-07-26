@@ -1,22 +1,22 @@
 {
   "username": "mithun50",
-  "generated_at": "2026-07-25T05:58:36Z",
+  "generated_at": "2026-07-26T06:17:27Z",
   "range": {
-    "start": "2025-07-20",
-    "end": "2026-07-25"
+    "start": "2025-07-27",
+    "end": "2026-07-26"
   },
-  "total_contributions": 3118,
-  "active_days": 324,
-  "avg_per_active_day": 9.6,
+  "total_contributions": 3048,
+  "active_days": 321,
+  "avg_per_active_day": 9.5,
   "current_streak": {
-    "length": 156,
+    "length": 157,
     "start": "2026-02-20",
-    "end": "2026-07-25"
+    "end": "2026-07-26"
   },
   "longest_streak": {
-    "length": 156,
+    "length": 157,
     "start": "2026-02-20",
-    "end": "2026-07-25"
+    "end": "2026-07-26"
   },
   "best_day": {
     "date": "2026-02-07",
@@ -25,7 +25,7 @@
   "monthly": [
     {
       "month": "2025-07",
-      "total": 82
+      "total": 0
     },
     {
       "month": "2025-08",
@@ -33,7 +33,7 @@
     },
     {
       "month": "2025-09",
-      "total": 208
+      "total": 206
     },
     {
       "month": "2025-10",
@@ -73,38 +73,10 @@
     },
     {
       "month": "2026-07",
-      "total": 121
+      "total": 135
     }
   ],
   "days": [
-    {
-      "date": "2025-07-20",
-      "count": 20
-    },
-    {
-      "date": "2025-07-21",
-      "count": 14
-    },
-    {
-      "date": "2025-07-22",
-      "count": 11
-    },
-    {
-      "date": "2025-07-23",
-      "count": 37
-    },
-    {
-      "date": "2025-07-24",
-      "count": 0
-    },
-    {
-      "date": "2025-07-25",
-      "count": 0
-    },
-    {
-      "date": "2025-07-26",
-      "count": 0
-    },
     {
       "date": "2025-07-27",
       "count": 0
@@ -263,7 +235,7 @@
     },
     {
       "date": "2025-09-04",
-      "count": 2
+      "count": 1
     },
     {
       "date": "2025-09-05",
@@ -271,7 +243,7 @@
     },
     {
       "date": "2025-09-06",
-      "count": 5
+      "count": 4
     },
     {
       "date": "2025-09-07",
@@ -1559,7 +1531,11 @@
     },
     {
       "date": "2026-07-25",
-      "count": 2
+      "count": 12
+    },
+    {
+      "date": "2026-07-26",
+      "count": 4
     }
   ]
 }
