@@ -24,17 +24,15 @@ INP = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "source-pho
 OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "source-prepped.png")
 
 # 1. cut out the subject
-cut = remove(Image.open(INP).convert("RGBA"))
+img_rgba = Image.open(INP).convert("RGBA")
+cut = remove(img_rgba)
 rgb = np.array(cut.convert("RGB"))
 alpha = np.array(cut.split()[-1])                 # 0 = background
 
 # 2. local-contrast the luminance (CLAHE)
 gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY)
-clahe = cv2.createCLAHE(clipLimit=2.6, tileGridSize=(8, 8))
+clahe = cv2.createCLAHE(clipLimit=2.2, tileGridSize=(8, 8))
 gray = clahe.apply(gray)
-
-# a touch of global lift so the face sits in the sparse end of the ramp
-gray = cv2.convertScaleAbs(gray, alpha=1.05, beta=18)
 
 # 3. paste onto white using the alpha mask (feathered a hair to avoid a halo)
 mask = (alpha.astype(np.float32) / 255.0)
@@ -42,5 +40,12 @@ mask = cv2.GaussianBlur(mask, (0, 0), 1.0)
 out = gray.astype(np.float32) * mask + 255.0 * (1.0 - mask)
 out = np.clip(out, 0, 255).astype(np.uint8)
 
-Image.fromarray(out, mode="L").save(OUT)
-print("wrote", OUT, out.shape)
+res_img = Image.fromarray(out, mode="L")
+# Crop head & shoulders for maximum ASCII portrait clarity
+h, w = out.shape
+if h > 800 and w > 500:
+    res_img = res_img.crop((int(w * 0.05), int(h * 0.05), int(w * 0.95), int(h * 0.70)))
+
+res_img.save(OUT)
+print("wrote", OUT, res_img.size)
+

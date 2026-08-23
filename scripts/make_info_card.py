@@ -14,7 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "info-card.svg")
 STATIC = bool(os.environ.get("STATIC"))
 
-W, H = 480, 376
+W, H = 480, 410
 PAD = 20
 TITLEBAR_H = 30
 KEY_X = PAD
@@ -43,24 +43,26 @@ ACCENT = "#22d3ee"
 #    ("bul", text)          -> green dot + light bullet
 #    ("gap",)               -> a little vertical space
 # ===========================================================================
-HOST = "mithun"   # shown as  mithun@github  in the header
+HOST = "abhinavaby"
 
 ROWS = [
     ("host",),
-    ("kv", "Now", "Python Developer"),
-    ("kv", "Also", "Co-Founder @ Quilonix"),
-    ("kv", "Loc", "Ramanagara, Karnataka, India"),
-    ("kv", "Site", "mithungowda.in"),
+    ("kv", "Now", "Creative Developer & Cloud Enthusiast"),
+    ("kv", "Edu", "CSE Second Year @ SJCET PALAI"),
+    ("kv", "Loc", "Kerala, India"),
+    ("kv", "Site", "abhinav-aby-profile.vercel.app"),
     ("gap",),
     ("sec", "Stack"),
-    ("kv", "Backend", "Flask, FastAPI, Python"),
-    ("kv", "Data", "Pandas, Colab"),
-    ("kv", "Mobile", "Dart"),
-    ("kv", "Deploy", "Netlify"),
+    ("kv", "Languages", "Python, JavaScript, C, Java, PHP"),
+    ("kv", "Frontend", "HTML5, CSS3, Tailwind, React, Vite"),
+    ("kv", "Backend", "Flask, Django, FastAPI, Express.js"),
+    ("kv", "Cloud/DB", "Firebase, Supabase, MySQL, MongoDB"),
+    ("kv", "Design/AI", "Figma, OpenCV, Three.js, PyTorch"),
     ("gap",),
     ("sec", "Highlights"),
-    ("bul", "Published packages on PyPI"),
-    ("bul", "112 public repos, 266 followers"),
+    ("bul", "Building clean & user-focused web experiences"),
+    ("bul", "108 public repos, 457 followers on GitHub"),
+    ("bul", "Active contributor to open-source & community"),
 ]
 
 
