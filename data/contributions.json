@@ -1,17 +1,17 @@
 {
   "username": "abhinavaby",
-  "generated_at": "2026-08-31T09:53:44Z",
+  "generated_at": "2026-09-01T08:45:20Z",
   "range": {
     "start": "2025-08-31",
-    "end": "2026-08-31"
+    "end": "2026-09-01"
   },
   "total_contributions": 1072,
   "active_days": 229,
   "avg_per_active_day": 4.7,
   "current_streak": {
-    "length": 5,
-    "start": "2026-08-26",
-    "end": "2026-08-30"
+    "length": 0,
+    "start": null,
+    "end": null
   },
   "longest_streak": {
     "length": 30,
@@ -74,6 +74,10 @@
     {
       "month": "2026-08",
       "total": 81
+    },
+    {
+      "month": "2026-09",
+      "total": 0
     }
   ],
   "days": [
@@ -1539,6 +1543,10 @@
     },
     {
       "date": "2026-08-31",
+      "count": 0
+    },
+    {
+      "date": "2026-09-01",
       "count": 0
     }
   ]
